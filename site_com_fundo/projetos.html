@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projetos - Abreu Molduras</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+ header h1 {
+    font-family: 'Benguiat Bk BT', serif;
+  }
+
+  main h2 {
+    font-family: 'Benguiat Bk BT', serif;
+  }
+
+  main p {
+    font-family: 'Benguiat Bk BT', serif;
+  }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav {
+      background: #002244;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      padding: 10px 0;
+      flex-wrap: wrap;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      padding: 6px 10px;
+      border-radius: 6px;
+      transition: background 0.3s;
+      font-size: 15px;
+    }
+
+    .menu a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.08);
+    }
+
+    .projetos-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      justify-items: center;
+      align-items: start;
+    }
+
+    .projeto {
+      text-align: center;
+      max-width: 320px;
+    }
+
+    .projeto h2 {
+      margin: 5px 0;
+      font-size: 18px;
+      color: #003366;
+    }
+
+    .projeto p {
+      margin: 5px 0 10px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .projeto img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .projeto a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .projeto img:hover {
+      transform: scale(1.02);
+    }
+
+    footer {
+      background: #003366;
+      color: #ccc;
+      text-align: center;
+      padding: 12px;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      .projetos-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Projetos em Exibição</h1>
+  </header>
+
+  <nav>
+    <div class="menu">
+      <a href="inicio.html"><i class="fas fa-home"></i> Início</a>
+      <a href="sobre.html"><i class="fas fa-users"></i> Sobre Nós</a>
+      <a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="projetos-container">
+      
+      <div class="projeto">
+        <a href="armando.html">
+          <h2>Por Armando d'Abreu</h2>
+          <p>Obras do fundador e artista Armando Abreu. É focado em aguarelas, especialmente de paisagens de Cascais.</p>
+          <img src="projetosA/quadrela.png" alt="Projeto Armando" />
+        </a>
+      </div>
+
+      <div class="projeto">
+        <a href="outros.html">
+          <h2>Outros artistas</h2>
+          <p>Outros projetos e molduras disponíveis para venda.</p>
+          <img src="projetosB/moldura.png" alt="Projeto Outros" />
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    &copy; Carolina Facadas | 12º7 - Nº2 | Agrupamento de Escolas de Alvide | 2024/2025.
+  </footer>
+
+</body>
+</html>

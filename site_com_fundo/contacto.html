@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto - Abreu Molduras</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+ header h1 {
+    font-family: 'Benguiat Bk BT', serif;
+  }
+
+  main h2 {
+    font-family: 'Benguiat Bk BT', serif;
+  }
+
+  main p {
+    font-family: 'Benguiat Bk BT', serif;
+  }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #002244;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 15px 0;
+      flex-wrap: wrap;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: background 0.3s;
+      font-size: 16px;
+    }
+
+    .menu a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #003366;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      resize: vertical;
+    }
+
+    button {
+      background: #003366;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #0055aa;
+    }
+
+    .info-extra {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 16px;
+    }
+
+    .info-extra a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    .info-extra a:hover {
+      text-decoration: underline;
+    }
+
+    .telefone {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    footer {
+      background: #003366;
+      color: #ccc;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+    .links-extras {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.links-extras a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #003366;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+  font-size: 16px;
+}
+
+.links-extras a:hover {
+  background-color: #0055aa;
+}
+
+.links-extras i {
+  font-size: 18px;
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contacto</h1>
+  </header>
+
+  <nav>
+    <div class="menu">
+      <a href="inicio.html"><i class="fas fa-home"></i> Início</a>
+      <a href="sobre.html"><i class="fas fa-users"></i> Sobre Nós</a>
+      <a href="projetos.html"><i class="fas fa-project-diagram"></i> Projetos</a>
+    </div>
+  </nav>
+
+  <main>
+    <h2>Entre em contacto conosco: </h2>
+
+    <form action="https://formspree.io/f/mldnboaz" method="POST">
+      <div>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="O seu nome" required>
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="O seu email" required>
+      </div>
+
+      <div>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva a sua mensagem aqui..." required></textarea>
+      </div>
+
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+
+
+    <div class="info-extra telefone">
+      <p><strong>Ou ligue para:</strong> <a href="tel:+351214865459">+351 214 865 459</a></p>
+    </div>
+
+    <div class="info-extra">
+  <p><strong>Também pode visitar:</strong></p>
+  <div class="links-extras">
+    <a href="https://www.instagram.com/abreu_molduras/" target="_blank">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+    <a href="https://www.olx.pt/ads/user/EdyZ/" target="_blank">
+      <i class="fas fa-store"></i> OLX
+    </a>
+  </div>
+</div>
+
+
+  </main>
+
+  <footer>
+    &copy; Carolina Facadas | 12º7 - Nº2 | Agrupamento de Escolas de Alvide | 2024/2025.
+  </footer>
+
+</body>
+</html>

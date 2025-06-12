@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Armando d'Abreu Molduras</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+ 
+</head>
+ <style>
+    html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  header h1 {
+    font-family: 'Benguiat Bk BT', serif;
+  }
+
+  main h2 {
+    font-family: 'Benguiat Bk BT', serif;
+  }
+
+  main p {
+    font-family: 'Benguiat Bk BT', serif;
+  }
+  
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('cascais.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 20px;
+      flex-direction: column;
+    }
+
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-toggle div {
+      width: 25px;
+      height: 3px;
+      background: white;
+      margin: 4px 0;
+      transition: 0.3s;
+    }
+
+    .menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    .menu a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  flex: 1;
+  text-align: center;
+}
+
+    footer {
+      background: rgba(0, 0, 0, 0.6);
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        margin-top: 10px;
+      }
+
+      .menu.show {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+    }
+
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin-top: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2); /* opcional para contraste */
+}
+
+
+.slide {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+
+.slide.active {
+  opacity: 1;
+}
+  </style>
+<body>
+
+  <header>
+<h1> Galeria Abreu Molduras</h1>
+
+  </header>
+
+  <nav>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="menu" id="menu">
+      <a href="sobre.html"><i class="fas fa-users"></i> Sobre Nós</a>
+      <a href="projetos.html"><i class="fas fa-project-diagram"></i> Projetos</a>
+      <a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a>
+    </div>
+  </nav>
+
+
+  <main>
+    <h2>Bem-vindo(a)!</h2>
+    <p>Conheça as mais diversas obras de arte e vários autores.</p>
+    <div class="slideshow-container">
+  <img class="slide" src="imagens/aguarela.png" alt="Imagem 1">
+  <img class="slide" src="imagens/gravura.png" alt="Imagem 2">
+  <img class="slide" src="imagens/moldura.png" alt="Imagem 3">
+   <img class="slide" src="imagens/moldura2.png" alt="Imagem 3">
+    <img class="slide" src="imagens/pintura.png" alt="Imagem 3">
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; Carolina Facadas | 12º7 - Nº2 | Agrupamento de Escolas de Alvide | 2024/2025.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("show");
+    }
+  function toggleMenu() {
+    document.getElementById("menu").classList.toggle("show");
+  }
+
+
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.slide');
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  showSlide(currentSlide); 
+  setInterval(nextSlide, 3000); 
+</script>
+
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Armando - Abreu Molduras</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    
+    header h1 {
+  font-family: 'Benguiat Bk BT', serif;
+}
+
+main h2 {
+  font-family: 'Benguiat Bk BT', serif;
+}
+
+main p {
+  font-family: 'Benguiat Bk BT', serif;
+}
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav {
+      background: #002244;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      padding: 10px 0;
+      flex-wrap: wrap;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      padding: 6px 10px;
+      border-radius: 6px;
+      transition: background 0.3s;
+      font-size: 15px;
+    }
+
+    .menu a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.08);
+    }
+
+    .galeria-item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .galeria-item img {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .descricao {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .descricao h3 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      color: #003366;
+    }
+
+    .descricao p {
+      margin: 0;
+      font-size: 15px;
+      color: #555;
+    }
+
+    footer {
+      background: #003366;
+      color: #ccc;
+      text-align: center;
+      padding: 12px;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      .galeria-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .descricao {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Pinturas de Armando Abreu</h1>
+  </header>
+
+  <nav>
+    <div class="menu">
+      <a href="inicio.html"><i class="fas fa-home"></i> Início</a>
+      <a href="sobre.html"><i class="fas fa-users"></i> Sobre Nós</a>
+      <a href="projetos.html"><i class="fas fa-project-diagram"></i> Projetos</a>
+      <a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <div class="galeria-item">
+      <img src="projetosA/aguarela1.png" alt="Aguarela 1">
+      <div class="descricao">
+        <h3>Paisagem do Guincho</h3>
+        <p>Aguarela da autoria de Armando de Abreu, por apenas €65,00.</p>
+      </div>
+    </div>
+
+    <div class="galeria-item">
+      <img src="projetosA/aguarela2.png" alt="Aguarela 2">
+      <div class="descricao">
+        <h3>Farol de Santa Marta</h3>
+        <p> Aguarela com passe-partout, 56 x 41 cm., por apenas €65,00.</p>
+      </div>
+    </div>
+
+    <div class="galeria-item">
+      <img src="projetosA/aguarela3.png" alt="Aguarela 1">
+      <div class="descricao">
+        <h3>Forte da Cruz no Estoril,</h3>
+        <p>Quadro com aguarela original, 106 x 89 cm., por apenas metade do preço €410,00.</p>
+      </div>
+    </div>
+
+    <div class="galeria-item">
+      <img src="projetosA/aguarela4.png" alt="Aguarela 1">
+      <div class="descricao">
+        <h3>Palácio do Duque de Loule</h3>
+        <p>Paisagem de Cascais, pintada em aguarela original por Armando de Abreu.</p>
+      </div>
+    </div>
+
+    <div class="galeria-item">
+      <img src="projetosA/aguarela5.png" alt="Aguarela 1">
+      <div class="descricao">
+        <h3>Palácio dos Condes de Castro Guimarães</h3>
+        <p> Moldura com aguarela original, por apenas €74,00.</p>
+      </div>
+    </div>
+
+    <div class="galeria-item">
+      <img src="projetosA/aguarela6.png" alt="Aguarela 1">
+      <div class="descricao">
+        <h3> Pintura Abstrata Original</h3>
+        <p>  Pintada em 1996. </p>
+      </div>
+    </div>
+
+    <div class="galeria-item">
+      <img src="projetosA/aguarela7.png" alt="Aguarela 1">
+      <div class="descricao">
+        <h3>O "Chalet" Seixas</h3>
+        <p>  A Messe da Marinha numa aguerla, 56 x 41 cm., por apenas €70,00.</p>
+      </div>
+    </div>
+
+    <div class="galeria-item">
+      <img src="projetosA/aguarela8.png" alt="Aguarela 1">
+      <div class="descricao">
+        <h3> Flor de anêmona</h3>
+        <p> Original do ano 2000, que mede exteriormente 86 x 70 cm.</p>
+      </div>
+    </div>
+  </main>
+
+      <div style="text-align: center; margin-top: 40px; font-size: 16px;">
+      <strong>Saiba mais em:</strong>
+      <a href="https://www.instagram.com/abreu_molduras?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+         target="_blank" 
+         style="color: #007BFF; text-decoration: none;">
+        @abreu_molduras
+      </a>
+    </div>
+
+    <p style="margin-top: 50px; margin-left: 20px;">
+  <a href="projetos.html" style="color: #007BFF; text-decoration: none; font-size: 16px;">
+    <i class="fas fa-arrow-left"></i> Voltar à página de Projetos
+  </a>
+</p>
+
+  <footer>
+    &copy; Carolina Facadas | 12º7 - Nº2 | Agrupamento de Escolas de Alvide | 2024/2025.
+  </footer>
+
+</body>
+</html>
